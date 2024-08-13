@@ -32,6 +32,10 @@ include device/google/gs-common/performance/experiments/experiments.mk
 # Google Assistant
 PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
 
+# Google Camera
+$(call inherit-product-if-exists, vendor/google/camera/camera.mk)
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+
 # Google Face Unlock
 $(call inherit-product-if-exists, vendor/google/faceunlock/config.mk)
 

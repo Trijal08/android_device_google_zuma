@@ -1,6 +1,3 @@
 # WLC
 allow system_app hal_wireless_charger_service:service_manager find;
 binder_call(system_app, hal_wireless_charger)
-
-# allow system apps to read battery status
-r_dir_file(system_app, sysfs_battery_supply)

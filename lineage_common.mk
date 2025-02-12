@@ -53,6 +53,9 @@ PRODUCT_PACKAGES += \
 # Pixel Parts
 $(call inherit-product-if-exists, packages/apps/PixelParts/device.mk)
 
+# Pixel Overlays
+WITH_PIXEL_OVERLAYS := true
+
 # Quick Tap Stronger Taps
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.columbus.use_ap_sensor=false

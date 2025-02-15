@@ -63,3 +63,6 @@ include hardware/google/pixel/touch/device.mk
 
 # UDFPS
 TARGET_HAS_UDFPS := true
+
+# Include some extras if they exist
+-include device/google/zuma/extras.mk
